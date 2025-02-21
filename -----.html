@@ -110,7 +110,7 @@
 
     async function saveLead(name, phone) {
       try {
-        const docRef = await addDoc(collection(db, "cozinhando"), {
+        const docRef = await addDoc(collection(db, "cozinhando.hermen1"), {
           name: name,
           phone: phone,
           timestamp: new Date()
@@ -126,7 +126,7 @@
     async function loadLeads() {
       const leadsContainer = document.getElementById("leadsContainer");
       leadsContainer.innerHTML = ""; // Limpa a lista antes de carregar
-      const querySnapshot = await getDocs(collection(db, "cozinhando.1"));
+      const querySnapshot = await getDocs(collection(db, "cozinhando.hermen1"));
       querySnapshot.forEach((doc) => {
         const lead = document.createElement("div");
         lead.textContent = `${doc.data().name} - ${doc.data().phone}`;
