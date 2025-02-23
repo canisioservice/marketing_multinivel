@@ -992,7 +992,7 @@
       <input type="text" id="telefone" name="telefone" placeholder="Seu telefone" required>
 
       <label for="curso">Curso:</label>
-      <input type="text" id="curso" name="curso" value="hotmart_intro" readonly>
+      <input type="text" id="curso" name="curso" value="marketing+bonus" readonly>
 
       <input type="submit" value="Quero me Inscrever" class="btn">
       <!-- Botão de Login também disponível nesta área -->
@@ -1100,7 +1100,7 @@
       doc.setFont("helvetica", "bold");
       doc.setFontSize(16);
       doc.setTextColor(255, 0, 0);
-      doc.text("RECIBO DE INSCRIÇÃO - CURSO GRATUITO", 105, 20, null, null, 'center');
+      doc.text("RECIBO DE INSCRIÇÃO", 105, 20, null, null, 'center');
 
       // Informações do recibo
       doc.setFont("helvetica", "normal");
@@ -1134,7 +1134,7 @@
     // Ao fechar o modal, redireciona para a página de login
     document.getElementById('closeModal').addEventListener('click', () => {
       successModal.style.display = 'none';
-      window.location.href = "verificacao-nome.html";
+      window.location.href = "verificacao.html";
     });
   </script>
 </body>
